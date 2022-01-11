@@ -436,3 +436,118 @@ const btn = document.getElementById("btn");
 btn.addEventListener('click', mostrarDataFormatada);*/
 
 
+//=========37a===============
+
+/*const listaDeuses = ['Aegir', 'Aud', 'Balder'];
+console.log(listaDeuses.length);*/
+
+//=========37b===============
+
+/*const listaDeuses = ['Aegir', 'Aud', 'Balder'];
+
+for(deus of listaDeuses){
+    alert(deus);
+}*/
+
+//=========37c===============
+/*function alertItem(item){
+    alert(item);
+}
+
+
+const listaDeuses = ['Aegir', 'Aud', 'Balder'];
+listaDeuses.map((item) => { alert(item) });*/
+
+//=========37e===============
+
+/*const listaDeuses = ['Aegir', 'Aud', 'Balder'];
+for(let i = 0; i < 3; i++){
+    let listaDeuses2 = ['Loki', 'Odin', 'Frey'];
+    listaDeuses.push(listaDeuses2[i]);
+}
+console.log(listaDeuses);*/
+
+//=========37f===============
+
+/*let listaDeuses = ['Aegir', 'Aud', 'Balder'];
+const listaDeuses2 = ['Loki', 'Odin', 'Frey'];
+
+
+for(let i = 0; i < listaDeuses2.length; i++){
+    listaDeuses.push(listaDeuses2[i]);
+}
+console.log(listaDeuses);*/
+
+//=========37g===============
+/*let listaNumeros = [5, 7, 1, 8, 9];
+listaNumeros.sort();
+console.log(listaNumeros);*/
+
+
+//=========37h===============
+
+//Filei muito, tenho que estudar mais sobre o Sort()
+/*let listaNumeros = [5, 7, 1, 8, 9];
+listaNumeros.sort((a, b) => b - a);
+console.log(listaNumeros)*/
+
+//=========38===============
+/*const listaDeuses = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr']
+const ulNomes = document.getElementById('nomes');
+for(deus of listaDeuses){
+    ulNomes.innerHTML += `<li>${deus}</li>`;
+    console.log('Criando');
+}
+console.log('Finalizado');*/
+
+//=========39===============
+/*const processar = () => {
+    ulLista.innerHTML = '';
+    let valores = inputTexto.value;
+    valores = valores.split('');
+    for(letra of valores){
+        ulLista.innerHTML += `<li>${letra}</li>`
+    }
+}
+
+const ulLista = document.getElementById('lista');
+const inputTexto = document.getElementById('inputTexto');
+const btnEnviar = document.getElementById('btnEnviar');
+
+btnEnviar.addEventListener('click', processar);*/
+
+//=========40===============
+/*const mostraPares = () => {
+    let valores = 0;
+    let valoresPares = [];
+    valores = inputTexto.value;
+    valores = valores.split('');
+    for(numero of valores){
+        if(numero % 2 === 0){
+            ulLista.innerHTML += `<li>${numero}</li>`
+        } 
+    }
+
+}
+
+
+const ulLista = document.getElementById('lista');
+const inputTexto = document.getElementById('inputTexto');
+const btnEnviar = document.getElementById('btnEnviar');
+
+btnEnviar.addEventListener('click', mostraPares);*/
+
+//=========41===============
+const contador = () => {
+    h1Contador.innerHTML -= 1;
+    if(parseInt(h1Contador.innerHTML) === 0){
+        clearInterval(contador);
+        console.log('alo')
+    }
+}
+const h1Contador = document.getElementById('contador');
+h1Contador.value = 5;
+
+setInterval(contador, 1000);
+
+//=========42===============
