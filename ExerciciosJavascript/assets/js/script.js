@@ -136,7 +136,7 @@ btnSoma.addEventListener('click', somar);*/
 
 
 //==========12a===========
-function mudarCorParaVermelho(){
+/*function mudarCorParaVermelho(){
     btnVermelho.style.backgroundColor = "red";
 }
 
@@ -148,30 +148,101 @@ const btnVerde = document.getElementById('btn-verde');
 const btnVermelho = document.getElementById('btn-vermelho');
 
 btnVerde.addEventListener('click', mudarCorParaVerde);
-btnVermelho.addEventListener('click', mudarCorParaVermelho);
-
-
+btnVermelho.addEventListener('click', mudarCorParaVermelho);*/
 
 //==========13===========
+/*function atualizaCpfSemPoint(){
+    cpfSemPoint.value = cpfPoint.value;
+    cpfSemPoint.value = trataCpf(cpfSemPoint.value);
 
+}
+
+function trataCpf(cpf){
+    cpf = cpf.replace('.', '');
+    cpf = cpf.replace('.', '');
+    cpf = cpf.replace(/-/g, '');
+    console.log(cpf);
+    return cpf;
+}
+
+const cpfPoint = document.getElementById("cpfPoint");
+let cpfSemPoint = document.getElementById("cpfSemPoint");*/
 
 //==========14===========
 
+/*function inserirTexto(){
+    resultado.innerHTML = texto;
+    console.log("Inserido");
+}
+
+const resultado = document.getElementById("resultado");
+const texto = "Esse texto foi inserido via Javascript";
+
+window.onload = inserirTexto;*/
 
 //==========15===========
+/*function inserirTexto(){
+    resultado.innerHTML = texto;
+    console.log("Inserido");
+}
 
+const resultado = document.getElementById("resultado");
+const texto = "Esse texto foi inserido via Javascript";
+const btnInserir = document.getElementById("btn-inserir-texto");
+
+btnInserir.addEventListener('click', inserirTexto);*/
 
 //==========16===========
+/*function somar(n1, n2){
+    let soma = Number(n1) + Number(n2);
+    resultadoSoma.innerHTML = soma;
+    console.log(soma);
+}
 
+const inputSoma1 = document.getElementById("soma1");
+const inputSoma2 = document.getElementById("soma2");
+const btnSoma = document.getElementById("btn-soma");
+const resultadoSoma = document.getElementById("resultado-soma");
+
+btnSoma.addEventListener('click', () => somar(inputSoma1.value, inputSoma2.value));*/
 
 //==========17===========
+/*function somar(n1, n2){
+    if(!n1 || !n2){
+        return 0;
+    }
+    return n1 + n2;
+}
 
-
+console.log(somar(5, 7));
+console.log(somar(2));
+console.log(somar());*/
 //==========18===========
-
+//console.log(5 % 2);
 
 //==========19===========
+/*function retornaImparPar(numero){
+    if(!numero){
+        return "Parâmetro Inválido ou Ausente";
+    }
+    if(numero % 2 === 0){
+        return "Par";
+    } else {
+        return "Impar";
+    }
+}
 
+console.log(retornaImparPar(2));
+console.log(retornaImparPar(3));
+console.log(retornaImparPar());*/
 
 //==========20===========
+/*
+const retornaMultiplicao = (n1, n2) => {
+    return n1 * n2;
+}
+
+console.log(retornaMultiplicao(2, 5)); // 10
+*/
+//===========21===========
 
