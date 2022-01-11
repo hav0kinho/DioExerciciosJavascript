@@ -245,4 +245,194 @@ const retornaMultiplicao = (n1, n2) => {
 console.log(retornaMultiplicao(2, 5)); // 10
 */
 //===========21===========
+/*function calculaDesconto(preco){
+    return preco - (preco * 0.05);
+}
+
+console.log(calculaDesconto(100));
+*/
+//============22=========
+/*function retornaMaiorDeIdade(anoNascimento){
+    if(anoNascimento >= 18){
+        return "Maior de Idade";
+    } else {
+        return "Menor de Idade";
+    }
+}
+
+console.log(retornaMaiorDeIdade(22));
+console.log(retornaMaiorDeIdade(17));*/
+
+//===========23===========
+/*const divResultado = document.getElementById("resultado");
+
+for(let i = 0; i < 1; i++){
+    divResultado.innerHTML += "Repetição<br>";
+}*/
+
+//===========24===========
+/*const divResultado = document.getElementById("resultado");
+
+for(let i = 0; i < 2; i++){
+    divResultado.innerHTML += "Repetição<br>";
+}*/
+
+//===========25===========
+/*const divResultado = document.getElementById("resultado");
+
+for(let i = 0; i < 20; i++){
+    divResultado.innerHTML += "Repetição<br>";
+}*/
+//===========26===========
+//Não entendi como posso utilizar o forEach nisso
+
+
+//===========27===========
+/*const divResultado = document.getElementById('resultado');
+let i = 0;
+
+while(i < 5){
+    divResultado.innerHTML += "Repetição<br>";
+    i++;
+}*/
+
+//===========28===========
+/*const divResultado = document.getElementById("resultado");
+let i = 0;
+
+do{
+    divResultado.innerHTML += "Resultado<br>";
+    i++;
+}while(i < 5);
+*/
+
+//===========29===========
+
+/*const divResultado = document.getElementById("resultado");
+
+for(let i = 0; i < 11; i++){
+    divResultado.innerHTML += `${i}<br>`;
+}*/
+
+
+//===========30===========
+/*const divResultado = document.getElementById("resultado");
+
+for(let i = 0; i < 21; i++){
+    if(i % 2 === 0){
+        divResultado.innerHTML += `${i}<br>`;
+    }
+}*/
+
+//===========31===========
+
+/*const divResultado = document.getElementById('resultado');
+
+for(let i = 0; i <= 10; i++){
+    for(let j = 0; j <= 10; j++){
+        divResultado.innerHTML += `${i} x ${j} = ${i * j}<br>`;
+    }
+    divResultado.innerHTML += "<br><br>";
+}*/
+
+//===========32===========
+/*const verificaDota = (texto) => {
+    let textoCarga = texto.toUpperCase();
+    if(textoCarga.includes('DOTA')){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let texto = "Dota é melhor que LOL";
+let texto2 = "Lol é melhor que CS";
+console.log(verificaDota(texto));
+console.log(verificaDota(texto2));*/
+
+//===========33===========
+//alert(Math.floor((Math.random() * 100)));
+
+//==========34============
+/*function geraNumeroAleatorioEVerificaIgualdade(num1){
+    let numeroAleatorio = Math.floor(Math.random() * 10);
+    console.log(numeroAleatorio);
+    if(parseInt(num1) === numeroAleatorio){
+        alert("Você acertou! Sortudo!");
+    } else {
+        alert("Você Errou!");
+    }
+}
+
+const butao = document.getElementById("enviar");
+const inputNumero = document.getElementById("inputNumero");
+
+butao.addEventListener("click", () => geraNumeroAleatorioEVerificaIgualdade(inputNumero.value));*/
+
+
+//==========35 e 36============
+/*const mostrarData = () => {
+    let data = new Date();
+    console.log(data);
+}
+const mostrarDataFormatada = () => {
+    let data = new Date();
+    console.log(`${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`) // DD/MM/AAAA
+    console.log(`${verificaMes(data.getMonth() + 2)} é o próximo mês`);
+}
+
+const verificaMes = (num) => {
+    if(!num){
+        return "Insira um Mês"
+    }
+    if(num > 12 || num < 0){
+        return "Mês Inválido";
+    }
+
+    switch(num){
+        case 1:
+            return "Janeiro";
+            break;
+        case 2:
+            return "Fevereiro";
+            break;
+        case 3:
+            return "Março";
+            break;
+        case 4:
+            return "Abril";
+            break;
+        case 5:
+            return "Maio";
+            break;
+        case 6:
+            return "Junho";
+            break;
+        case 7:
+            return "Julho";
+            break;
+        case 8:
+            return "Agosto";
+            break;
+        case 9:
+            return "Setembro";
+            break;
+        case 10:
+            return "Outubro";
+            break;
+        case 11:
+            return "Novembro";
+            break;
+        case 12:
+            return "Dezembro";
+            break;
+    }
+}
+let dataTeste = new Date();
+const btn = document.getElementById("btn");
+
+
+
+btn.addEventListener('click', mostrarDataFormatada);*/
+
 
